@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="theme-color" content="#172725">
+  <title>OrientDig spreadsheet | Guía de tallas, fotos QC y envíos</title>
+  <meta name="description" content="Consulta la guía de OrientDig spreadsheet en español. Explora diez categorías y aprende a comparar tallas, revisar fotos QC y estimar el coste de envío.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="OrientDig spreadsheet | Guía de tallas, fotos QC y envíos">
+  <meta property="og:description" content="Diez categorías y una guía práctica para comparar fichas, medidas, fotos de almacén y costes antes de comprar.">
+  <link rel="preconnect" href="https://static.nike.com">
+  <!--
+    Archivo: index.html.
+    La página de resultados de Bing no estuvo accesible para verificar el orden
+    de sus diez primeros resultados. La investigación se basó en diez páginas
+    recuperadas mediante búsqueda web, sin atribuirles una posición en Bing.
+    Páginas revisadas:
+    orientdigwithqc.com/spreadsheet/shoes
+    orientdgsheets.com/
+    grails.fit/orientdig-spreadsheet
+    orientdigglobal.com/
+    orientdigwithqc.com/spreadsheet
+    chinagrails.com/en/spreadsheet/agent/orientdig
+    orientdigindex.com/en/orientdig-shoes-spreadsheet
+    orientdigi.com/
+    orientdiglists.com/
+    spreadsheetorientdig.org/
+    Consultas secundarias: guía de OrientDig en español, fotos QC de OrientDig,
+    tallas de zapatillas, coste de envío internacional.
+  -->
+  <style>
+    :root {
+      color-scheme: light;
+      --paper: #f8f3e9;
+      --ink: #172725;
+      --muted: #495e56;
+      --line: #d7cfc0;
+      --white: #fffdf8;
+      --accent: #f3d174;
+      --rust: #913f28;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font: 1rem/1.6 system-ui, -apple-system, "Segoe UI", sans-serif;
+    }
+
+    a { color: inherit; }
+    a:focus-visible, summary:focus-visible {
+      outline: 3px solid var(--rust);
+      outline-offset: 4px;
+    }
+
+    .wrap { width: min(74rem, calc(100% - 2rem)); margin-inline: auto; }
+
+    .masthead {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: .75rem;
+      padding-block: .9rem;
+      font-size: .92rem;
+    }
+
+    .masthead strong { letter-spacing: .04em; }
+
+    .hero {
+      display: grid;
+      grid-template-columns: 1.25fr 1fr;
+      min-width: 0;
+      overflow: hidden;
+      border-radius: 1.2rem;
+      background: var(--ink);
+      color: var(--white);
+    }
+
+    .hero-copy {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      padding: clamp(1.4rem, 5vw, 4.4rem);
+    }
+
+    h1, h2, h3, p, figure { margin: 0; }
+
+    h1, h2 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-weight: 700;
+      line-height: 1.08;
+      letter-spacing: -.035em;
+    }
+
+    h1 { font-size: clamp(2.65rem, 7vw, 5.6rem); }
+    h2 { font-size: clamp(1.8rem, 4vw, 3rem); }
+    h3 { font-size: 1.15rem; line-height: 1.3; }
+    p { margin-top: .7rem; }
+
+    .hero-copy p { max-width: 49ch; color: #f3ebdb; }
+
+    .button {
+      display: inline-block;
+      margin-top: 1.2rem;
+      padding: .7rem 1rem;
+      border-radius: .45rem;
+      background: var(--accent);
+      color: var(--ink);
+      font-weight: 750;
+      text-decoration: none;
+    }
+
+    .button:hover { background: #ffe49d; }
+
+    .hero-image {
+      display: grid;
+      align-content: center;
+      justify-items: center;
+      padding: 1rem;
+      background: #ece8df;
+      color: var(--ink);
+    }
+
+    .hero-image img {
+      display: block;
+      width: min(100%, 24rem);
+      height: auto;
+      mix-blend-mode: multiply;
+    }
+
+    figcaption { font-size: .88rem; }
+
+    .section { margin-top: clamp(2rem, 5vw, 4.4rem); }
+
+    .category-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(100%, 11rem), 1fr));
+      gap: .55rem;
+      margin: 1rem 0 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .category-list a {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: .45rem;
+      min-height: 3.25rem;
+      height: 100%;
+      padding: .55rem .8rem;
+      border: 1px solid var(--line);
+      border-radius: .5rem;
+      background: var(--white);
+      font-weight: 650;
+      text-decoration: none;
+    }
+
+    .category-list a:hover { border-color: var(--rust); color: var(--rust); }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: .75rem;
+      margin-top: 1rem;
+    }
+
+    .gallery figure {
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: .6rem;
+      background: var(--white);
+    }
+
+    .gallery img {
+      display: block;
+      width: 100%;
+      height: auto;
+      aspect-ratio: 1;
+      object-fit: contain;
+      background: #eee9df;
+    }
+
+    .gallery figcaption { padding: .55rem .75rem; }
+
+    .guide-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1rem;
+      margin-top: 1.15rem;
+    }
+
+    .guide-grid article {
+      border-top: 2px solid var(--rust);
+      padding-top: .8rem;
+    }
+
+    .lead { max-width: 68ch; color: var(--muted); }
+
+    .faq { max-width: 51rem; margin-top: 1rem; }
+
+    details { border-bottom: 1px solid var(--line); padding: .75rem 0; }
+    summary { cursor: pointer; font-weight: 750; }
+    details p { padding-bottom: .35rem; }
+
+    footer {
+      margin-top: 3rem;
+      padding: 1.15rem 0 1.6rem;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: .9rem;
+    }
+
+    @media (max-width: 44rem) {
+      .hero, .guide-grid { grid-template-columns: 1fr; }
+      .hero-image img { width: min(100%, 15rem); }
+      .gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "name": "OrientDig spreadsheet | Guía de tallas, fotos QC y envíos",
+        "description": "Guía en español para explorar categorías de moda y comparar tallas, fotos QC y costes de envío.",
+        "inLanguage": "es",
+        "about": {
+          "@type": "Thing",
+          "name": "OrientDig spreadsheet"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "inLanguage": "es",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "¿Qué es una OrientDig spreadsheet?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Es una hoja o catálogo que agrupa enlaces de productos para facilitar la búsqueda y la comparación. Antes de comprar, confirma la variante, las medidas y la disponibilidad en la ficha del vendedor."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Qué significa QC y qué puedo comprobar en esas fotos?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "QC significa control de calidad. Si hay fotos del artículo recibido en almacén, compáralas con la variante pedida y revisa las etiquetas, el acabado y las medidas que se vean. Las fotos por sí solas no certifican la autenticidad."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cómo elijo mi talla si solo aparece la numeración europea?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "En calzado, mide ambos pies y consulta la tabla del modelo para la medida del pie más largo. En ropa, compara las medidas de la ficha con las de una prenda que te quede bien, tomadas del mismo modo."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cómo calculo el coste total del pedido?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Suma el precio del producto, el envío interno, las comisiones y el envío internacional. Según el destino, añade los impuestos y gastos de gestión que correspondan. Comprueba si el transportista factura por peso real o volumétrico."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Adónde llevan los enlaces de esta guía?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Los enlaces llevan al catálogo de HipoBuyFind o a una categoría concreta de ese catálogo. Consulta la ficha de cada producto para comprobar qué variantes están disponibles."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+<link rel="canonical" href="https://kakobuyfinds.github.io/jfohp/">
+</head>
+<body>
+  <header class="wrap masthead">
+    <strong>GUÍA DE COMPRA</strong>
+    <a href="https://www.hipobuyfind.com">HipoBuyFind</a>
+  </header>
+
+  <main class="wrap">
+    <section class="hero" aria-labelledby="titulo">
+      <div class="hero-copy">
+        <h1 id="titulo">OrientDig spreadsheet</h1>
+        <p>Encuentra la categoría que buscas y compara lo que importa antes de abrir una ficha: las medidas de la variante, las fotos de almacén y el coste total de recibir el pedido.</p>
+        <a class="button" href="https://www.hipobuyfind.com">Explorar el catálogo</a>
+      </div>
+      <figure class="hero-image">
+        <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto%2Cq_auto%3Aeco%2Cc_scale%2Cw_300%2Cu_9ddf04c7-2a9a-4d76-add1-d15af8f0263d%2Cc_scale%2Cfl_relative%2Cw_1.0%2Ch_1.0%2Cfl_layer_apply/lgz0mhzhbevjk9kt3eio/NIKE%2BAIR%2BMAX%2B2017.png" width="384" height="480" fetchpriority="high" alt="Zapatilla Nike Air Max 2017 blanca y gris con cámara de aire visible">
+        <figcaption>Nike Air Max 2017</figcaption>
+      </figure>
+    </section>
+
+    <nav class="section" aria-labelledby="categorias">
+      <h2 id="categorias">Explora por categoría</h2>
+      <ul class="category-list">
+        <li><a href="https://hipobuyfind.com/category-911-Shoes.html">Calzado <span aria-hidden="true">↗</span></a></li>
+        <li><a href="https://hipobuyfind.com/category-912-Hoodies%2FSweaters.html">Sudaderas y jerséis <span aria-hidden="true">↗</span></a></li>
+        <li><a href="https://hipobuyfind.com/category-913-T-Shirts.html">Camisetas <span aria-hidden="true">↗</span></a></li>
+        <li><a href="https://hipobuyfind.com/category-914-Jackets.html">Chaquetas <span aria-hidden="true">↗</span></a></li>
+        <li><a href="https://hipobuyfind.com/category-915-Pants%2FShorts.html">Pantalones y shorts <span aria-hidden="true">↗</span></a></li>
+        <li><a href="https://hipobuyfind.com/category-916-Headwear.html">Gorras y sombreros <span aria-hidden="true">↗</span></a></li>
+        <li><a href="https://hipobuyfind.com/category-917-Sets.html">Conjuntos <span aria-hidden="true">↗</span></a></li>
+        <li><a href="https://hipobuyfind.com/category-918-underwear%2Funderpants.html">Ropa interior <span aria-hidden="true">↗</span></a></li>
+        <li><a href="https://hipobuyfind.com/category-919-Jersey.html">Camisetas deportivas <span aria-hidden="true">↗</span></a></li>
+        <li><a href="https://hipobuyfind.com/category-920-Accessories.html">Accesorios <span aria-hidden="true">↗</span></a></li>
+      </ul>
+    </nav>
+
+    <section class="section" aria-labelledby="guia">
+      <h2 id="guia">De la ficha al envío</h2>
+      <p class="lead">Una OrientDig spreadsheet reúne referencias de distintas categorías. Usa esta guía en español para decidir qué revisar en la ficha, qué pedir en una foto y qué incluir en tu presupuesto.</p>
+      <div class="guide-grid">
+        <article>
+          <h3>Cómo comparar tallas de zapatillas y ropa</h3>
+          <p>Para elegir talla de zapatillas, mide ambos pies en centímetros y usa el más largo. Comprueba si la tabla de tallas del vendedor indica longitud del pie o longitud de la plantilla. Si la ficha solo muestra tallas EU, pide la medida correspondiente a la variante elegida.</p>
+          <p>Para una sudadera de corte holgado, compara ancho de pecho y largo de manga con una prenda extendida sobre una mesa. En chaquetas, revisa también el ancho de hombros. En pantalones, comprueba cintura y largo de entrepierna. Para elegir talla de gorra, mide el contorno de la cabeza.</p>
+        </article>
+
+        <article>
+          <h3>Cómo revisar las fotos QC de OrientDig</h3>
+          <p>Si tienes acceso a fotos de control de calidad, comprueba primero color, talla y etiqueta. Para revisar unas zapatillas, compara ambos laterales, las suelas y la simetría del par. En una camiseta estampada, fíjate en el centrado del diseño y en las costuras del cuello.</p>
+          <p>Para comprobar el tamaño de un accesorio, pide una foto con regla junto al artículo. Si el tono cambia entre una foto del vendedor y la foto de almacén, pide una toma con luz neutra antes de decidir.</p>
+        </article>
+
+        <article>
+          <h3>Cómo estimar el coste de envío internacional</h3>
+          <p>Apunta el precio de cada artículo, el envío interno y las comisiones. Para comparar rutas de envío, usa el mismo destino y las dimensiones del paquete embalado. Una caja de zapatillas puede afectar al peso volumétrico aunque el peso real cambie poco.</p>
+          <p>Si vas a consolidar varios pedidos, compara el presupuesto del paquete conjunto con el de los paquetes separados. Para envíos a España u otros destinos, comprueba qué impuestos y gastos de gestión cubre la tarifa y cuáles se cobran al recibir el paquete.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="referencias">
+      <h2 id="referencias">Referencias de moda</h2>
+      <p class="lead">Las imágenes ilustran estilos y categorías. La disponibilidad y las variantes se consultan en la ficha del vendedor.</p>
+      <div class="gallery">
+        <figure>
+          <img src="https://media.gucci.com/style/DarkGray_Center_0_0_490x490/1537981204/440103_X3F05_9045_004_100_0000_Light-Oversize-washed-T-shirt-with-Gucci-logo.jpg" width="490" height="490" loading="lazy" decoding="async" alt="Camiseta blanca Gucci de corte holgado con logotipo estampado">
+          <figcaption>Camiseta Gucci</figcaption>
+        </figure>
+        <figure>
+          <img src="https://au.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-monogram-denim-jacket--FVJA29EFY610_PM2_Front%20view.png?hei=480&amp;wid=480" width="480" height="480" loading="lazy" decoding="async" alt="Vista frontal de una chaqueta vaquera Louis Vuitton con motivo Monogram">
+          <figcaption>Chaqueta Louis Vuitton</figcaption>
+        </figure>
+        <figure>
+          <img src="https://assets.christiandior.com/is/image/diorprod/LOOK_H_26_4_LOOK_252_E26-1?%24r9x10_raw%24=&amp;crop=0%2C0%2C4000%2C5000&amp;hei=600&amp;scale=1&amp;wid=480" width="480" height="600" loading="lazy" decoding="async" alt="Modelo con sombrero de pescador Dior Montaigne negro">
+          <figcaption>Sombrero Dior Montaigne</figcaption>
+        </figure>
+        <figure>
+          <img src="https://kream-phinf.pstatic.net/MjAyNTA3MzFfNzAg/MDAxNzUzODk4MTE1MjI3.WHGujKqNd9mT7aHEnAwoupW_atTkD6iQczFjUwc4HVMg.QIMaa4Wt7_-kLRs4KpRV-NQhSMFSfTE8Ggprf8CyWYwg.PNG/a_2fba6b33de3f40fc847572fc7a5614b4.png" width="480" height="480" loading="lazy" decoding="async" alt="Pulsera Hermès Clic H naranja con cierre dorado en forma de H">
+          <figcaption>Pulsera Hermès Clic H</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="preguntas">
+      <h2 id="preguntas">Preguntas frecuentes</h2>
+      <div class="faq">
+        <details open>
+          <summary>¿Qué es una OrientDig spreadsheet?</summary>
+          <p>Es una hoja o catálogo que agrupa enlaces de productos para facilitar la búsqueda y la comparación. Antes de comprar, confirma la variante, las medidas y la disponibilidad en la ficha del vendedor.</p>
+        </details>
+        <details>
+          <summary>¿Qué significa QC y qué puedo comprobar en esas fotos?</summary>
+          <p>QC significa control de calidad. Si hay fotos del artículo recibido en almacén, compáralas con la variante pedida y revisa las etiquetas, el acabado y las medidas que se vean. Las fotos por sí solas no certifican la autenticidad.</p>
+        </details>
+        <details>
+          <summary>¿Cómo elijo mi talla si solo aparece la numeración europea?</summary>
+          <p>En calzado, mide ambos pies y consulta la tabla del modelo para la medida del pie más largo. En ropa, compara las medidas de la ficha con las de una prenda que te quede bien, tomadas del mismo modo.</p>
+        </details>
+        <details>
+          <summary>¿Cómo calculo el coste total del pedido?</summary>
+          <p>Suma el precio del producto, el envío interno, las comisiones y el envío internacional. Según el destino, añade los impuestos y gastos de gestión que correspondan. Comprueba si el transportista factura por peso real o volumétrico.</p>
+        </details>
+        <details>
+          <summary>¿Adónde llevan los enlaces de esta guía?</summary>
+          <p>Los enlaces llevan al catálogo de HipoBuyFind o a una categoría concreta de ese catálogo. Consulta la ficha de cada producto para comprobar qué variantes están disponibles.</p>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <footer class="wrap">
+    Guía editorial independiente sobre búsqueda y comparación de productos.
+  </footer>
+</body>
+</html>
